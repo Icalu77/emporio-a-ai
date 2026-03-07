@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emporio açai</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<style>
+    body{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background:#f5f0ff;
+    }
+
+    header{
+    background:#4b0082;
+    color:white;
+    padding:20px;
+    text-align:center;
+    }
+    
+    .promocoes{
+    background:#6a0dad;
+    color:white;
+    overflow:hidden;
+    height:40px;
+    display:flex;
+    align-items:center;
+    }
+
+    .slides{
+    display:flex;
+    animation:slide 12s infinite;
+    }
+
+    .slide{
+    min-width:100%;
+    text-align:center;
+    font-weight:bold;
+    }
+
+    @keyframes slide{
+    0%{transform:translateX(0);}
+    33%{transform:translateX(-100%);}
+    66%{transform:translateX(-200%);}
+    100%{transform:translateX(0);}
+    }
+
+    .banner{
+        text-align: center;
+        padding: 60px 20px;
+        background:linear-gradient(#6a0dad,#4b0082);
+        color: white;
+    }
+
+    .banner h2{
+        font-size: 35px;
+    }
+
+    .banner a{
+        display: inline-block;
+        margin-top: 20px;
+        padding: 15px 30px;
+        background:#25D366;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+
+    .cardapio{
+        padding: 40px;
+        text-align: center;
+    }
+
+    .produtos{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .card{
+        background: white;
+        width: 200px;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow:0 4px 10px rgba(0,0,0,0.1) ;
+    }
+
+    .card img{
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .card h3{
+        margin: 10px ;
+    }
+
+    .preco{
+        font-size:20px;   
+        color:#4b0082;
+        font-weight:bold;
+    }
+
+    .botao{
+        display: inline-block;
+        margin-top: 10px;
+        padding:10px 20px;
+        background:#4b0082;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+    }
+
+    .instagram {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+    }
+
+    footer{
+        background:#2e004f;
+        color:white;
+        text-align:center;
+        padding:20px;
+        margin-top:40px;
+    }
+    
+</style>
+<body>
+    <header>
+        <h1>Emporio Açai</h1>
+    </header>       
+
+    <div class="promocoes">
+        <div class="slides">
+        <div class="slide">NÃO FAZEMOS ENTREGA ❌</div>
+        <div class="slide"> RETIRE EM NOSSO ESTABELECIMENTO </div>
+        <div class="slide">NÃO FAZEMOS ENTREGA ❌</div>
+        </div>
+    </div>
+
+    <section class="banner">
+        <h2>Peça seu açaí agora!!</h2>
+        <p>NÃO FAZEMOS ENTREGA ❌ </p>
+        <a href="https://api.whatsapp.com/send/?phone=5598985740166&text&type=phone_number&app_absent=0&utm_source=ig?text=Olá quero pedir um açai">Pedir no WhatsApp</a>
+    </section>
+
+        <section class="cardapio">
+            <h2>Nosso Cardápio</h2>
+            <div class="produtos">
+
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/85/7f/9a/857f9a5ece01583d358e4edacb1e50d5.jpg">
+                <h3>Açai 300ml</h3>
+                <p class="preco">R$ 10</p>
+                <a class="botao" href="https://api.whatsapp.com/send/?phone=5598985740166&text&type=phone_number&app_absent=0&utm_source=ig?text=Olá quero pedir um açai">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/85/7f/9a/857f9a5ece01583d358e4edacb1e50d5.jpg">
+                <h3>Açai 500ml</h3>
+                <p class="preco">R$ 15</p>
+                <a class="botao" href="https://api.whatsapp.com/send/?phone=5598985740166&text&type=phone_number&app_absent=0&utm_source=ig?text=Olá quero pedir um açai">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/85/7f/9a/857f9a5ece01583d358e4edacb1e50d5.jpg">
+                <h3>Açai 750ml</h3>
+                <p class="preco">R$ 20</p>
+                <a class="botao" href="https://api.whatsapp.com/send/?phone=5598985740166&text&type=phone_number&app_absent=0&utm_source=ig?text=Olá quero pedir um açai">Comprar</a>
+            </div>
+
+            </div>
+        </section>
+    <br>
+    
+    <footer>
+        <br>
+        Santa Rita-MA <br>© 2026 <br>
+        <a class="instagram" href="https://www.instagram.com/emporioacai.str?igsh=MWdvaGZ4Z3hmcDV0Yw%3D%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </footer>
+</body>
+</html>
